@@ -3,19 +3,19 @@ spring:
     active: prod
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/test_1
-    username: cgl
-    password: Q!@w3e4r5t
+    username: root
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 ###jpa###
-  jpa:
-  ###show sql?###
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-  jackson:
-    serialization: true
+#  jpa:
+#  ###show sql?###
+#    show-sql: true
+#    hibernate:
+#      ddl-auto: update
+#  jackson:
+#    serialization: true
 
-#mybatis:
-#  typeAliasesPackage: com.demo.entity
-#  mapperLocations: classpath:mapper/*.xml
+mybatis:
+  typeAliasesPackage: com.demo.entity
+  mapperLocations: classpath:mapper/*.xml
