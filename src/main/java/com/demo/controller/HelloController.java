@@ -30,6 +30,11 @@ public class HelloController {
     @Autowired
     TeacherRepository teacherRepository;
     
+    @RequestMapping("/")
+    public String hi(){
+        return "forward:index.html";
+    }
+    
     @RequestMapping(value="/hello", method = RequestMethod.GET)
     @ResponseBody
     public String sayHello() {
