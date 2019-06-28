@@ -13,7 +13,8 @@ public class Student {
     }
     
     public String getName() {
-        return name;
+    	int i = 0;
+	return name;
     }
     
     public void setName(String name) {
