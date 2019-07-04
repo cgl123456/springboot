@@ -41,6 +41,7 @@ public class HelloController {
         Student student = new Student();
         student.setId(1);
         int a = 0;
+        String g = "cc-1";
         student.setName("chengguoliang-test-cc-1");
         return "hello," + student.getName() + "," + timePropertity.getYear();
     }
