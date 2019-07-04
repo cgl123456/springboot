@@ -40,6 +40,7 @@ public class HelloController {
     public String sayHello() {
         Student student = new Student();
         student.setId(1);
+        int a = 0;
         student.setName("chengguoliang");
         return "hello," + student.getName() + "," + timePropertity.getYear();
     }
